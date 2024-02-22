@@ -6,9 +6,11 @@
 
 :root {
     --accent-color: #0c2766;
-    --background-color: #3d5285;
-    --background-color-2: #6d7da3;
+    --background-color: #08080a;
+    --background-color-2: #141415;
     --light-grey: rgb(158, 169, 194);
+    --light-yellow: a5ac75;
+    --icon-yellow: #aca32d;
     --border-radius: 30px;
 }
 
@@ -43,11 +45,12 @@ html {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     background-color: var(--background-color);
+    color: #fff;
 }
 
 a {
     text-decoration: none;
-    color: var(--accent-color);
+    color: white;
 }
 
 p {
@@ -86,7 +89,7 @@ h2 {
     align-items: center;
     justify-content: center;
     order: 2;
-    background: #fff;
+    background: #141415;
     width: 70px;
     margin-left: 20px;
     border-radius: 35px;
@@ -98,10 +101,11 @@ h2 {
     font-size: 2rem;
     color: var(--light-grey);
     margin: 15px;
+    color: var(--light-yellow);
 }
 
 .menu-icon:hover {
-    color: var(--accent-color);
+    color: var(--icon-yellow);
 }
 
 /*=============== PORTFOLIO CONTAINER ===============*/
@@ -124,6 +128,7 @@ h2 {
     align-items: center;
     width: 500px;
     height: 100%;
+    border: 1px solid rgb(28, 28, 23);
     border-radius: var(--border-radius);
     color: white;
     overflow: auto;
@@ -135,7 +140,7 @@ h2 {
     border-radius: 50%;
     margin: 10px;
     margin-top: 100px;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 2px rgba(218, 208, 208, 0.5);
 }
 
 .header h1 {
@@ -185,11 +190,13 @@ h2 {
 
 .content {
     border-radius: var(--border-radius);
-    background: white;
+    background: var(--background-color-2);
     width: 100%;
     height: 100%;
     overflow: auto;
     scroll-behavior: smooth;
+    border: 1px solid rgb(28, 28, 23);
+
 }
 
 .content-card {
@@ -241,10 +248,11 @@ h2 {
 .bar span {
     height: 8px;
     float: left;
-    background: var(--accent-color);
+    border-radius: 10px;
+    background: #646132;
 }
 
-.bangla {
+.telugu {
     width: 100%;
 }
 
@@ -252,12 +260,12 @@ h2 {
     width: 75%;
 }
 
-.chinese {
+.hindi {
     width: 50%;
 }
 
 .skill {
-    background-color: var(--accent-color);
+    background-color: var(--icon-yellow);
     color: #fff;
     line-height: 35px;
     padding: 5px 10px;
@@ -294,7 +302,7 @@ h2 {
 }
 
 .overlay {
-    background: #ced4e0;
+    background: #babd9198;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -336,9 +344,9 @@ h2 {
     content: "";
     position: absolute;
     width: 2px;
-    top: 55px;
+    top: 30px;
     height: calc(100% - 100px);
-    background-color: var(--accent-color);
+    background-color: var(--icon-yellow);
     z-index: 100;
 }
 
@@ -349,9 +357,9 @@ h2 {
 .timeline-date::before {
     content: "";
     position: absolute;
-    background-color: var(--accent-color);
+    background-color: var(--icon-yellow);
     left: -25px;
-    top: 5px;
+    top: 20px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -379,16 +387,17 @@ form {
 
 .input-box input,
 textarea {
-    width: 100%;
+    min-width: 100%;
     margin: 1rem;
-    color: var(--accent-color);
+    color: white;
     font-size: 1rem;
     padding-left: 0.3rem;
+    background-color: #000000;
 }
 
 .input-box input::placeholder,
 textarea::placeholder {
-    color: var(--accent-color);
+    color: #7a7777;
     font-size: 1rem;
     padding-left: 0.3rem;
 }
@@ -407,18 +416,18 @@ textarea:focus {
     height: 2rem;
     background-color: transparent;
     border: none;
-    border-bottom: solid 2px var(--accent-color);
+    border-bottom: solid 2px #7e8938;
 }
 
 textarea {
-    height: 4rem;
+    min-height: 4rem;
     border: none;
-    border-bottom: solid 2px var(--accent-color);
+    border-bottom: solid 2px #7e8938;
 }
 
 .submit-btn {
     color: var(--accent-color);
-    background-color: #fff;
+    background-color: var(--light-yellow);
     padding: 10px 20px;
     margin: 50px 0;
     border-radius: 30px;
@@ -430,7 +439,7 @@ textarea {
 
 .submit-btn:hover {
     color: #fff;
-    background-color: var(--accent-color);
+    background-color: var(--icon-yellow);
     transition: 0.2s linear;
     transition-property: background-color, color;
     cursor: pointer;
