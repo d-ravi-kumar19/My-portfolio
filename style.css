@@ -2,20 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-/*=============== VARIABLES ===============*/
 
-:root {
-    --accent-color: #0c2766;
-    --background-color: #08080a;
-    --background-color-2: #141415;
-    --light-grey: rgb(158, 169, 194);
-    --light-yellow: a5ac75;
-    --icon-yellow: #aca32d;
-    --border-radius: 30px;
-}
-
-/*=============== SCROLLBAR ===============*/
-
+/*============ scroll bar ================= */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -33,19 +21,18 @@
     background: var(--light-grey);
 }
 
-/*=============== BASE ===============*/
-
+/* ================ Base ================== */
 * {
     padding: 0;
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: sans-serif;
 }
 
 html {
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    background-color: var(--background-color);
-    color: #fff;
+    font-family: sans-serif;
+    background-color: #08080a;
+
 }
 
 a {
@@ -53,13 +40,13 @@ a {
     color: white;
 }
 
-p {
-    line-height: 1.5rem;
-    margin-bottom: 0.7rem;
-}
-
 h1 {
     line-height: 4rem;
+}
+
+.section-title {
+    font-size: 2.3rem;
+    line-height: 5rem;
 }
 
 h2 {
@@ -74,6 +61,7 @@ h2 {
     width: 100%;
 }
 
+/* ================ container ================= */
 .container {
     display: flex;
     align-items: center;
@@ -81,8 +69,7 @@ h2 {
     height: 100vh;
 }
 
-/*=============== MENU ===============*/
-
+/* ============ Menu ================= */
 .menu {
     display: flex;
     flex-direction: column;
@@ -91,7 +78,7 @@ h2 {
     order: 2;
     background: #141415;
     width: 70px;
-    margin-left: 20px;
+    margin: 20px;
     border-radius: 35px;
     padding: 15px 0;
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
@@ -99,48 +86,49 @@ h2 {
 
 .menu-icon {
     font-size: 2rem;
-    color: var(--light-grey);
+    color: #a5ac75;
     margin: 15px;
-    color: var(--light-yellow);
 }
 
 .menu-icon:hover {
-    color: var(--icon-yellow);
+    color: #aca32d;
 }
 
-/*=============== PORTFOLIO CONTAINER ===============*/
-
+/* ================== portfolio ============== */
 .portfolio {
     display: flex;
-    background: var(--background-color-2);
-    height: 80vh;
-    width: 85vw;
+    background: #141415;
+    height: 90%;
+    width: 50vw;
     max-width: 1200px;
-    border-radius: var(--border-radius);
+    color: #fff;
+    border-radius: 30px;
+    margin: 20px;
+    border: 1px solid rgb(28, 28, 23);
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
 }
 
-/*=============== HEADER ===============*/
-
+/* =========== header============== */
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
-    height: 100%;
-    border: 1px solid rgb(28, 28, 23);
-    border-radius: var(--border-radius);
+    width: 100%;
+    height: 90%;
+    border-radius: 30px 20px 10px 20px;
     color: white;
     overflow: auto;
 }
 
-.header-img {
+.header img {
     width: 150px;
     height: auto;
     border-radius: 50%;
     margin: 10px;
     margin-top: 100px;
-    box-shadow: 0px 0px 10px 2px rgba(218, 208, 208, 0.5);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 .header h1 {
@@ -149,6 +137,10 @@ h2 {
 
 .header h2 {
     font-size: 1rem;
+}
+
+.header .line {
+    width: 50%;
 }
 
 .socials {
@@ -163,40 +155,45 @@ h2 {
 }
 
 .socials a:hover {
-    color: var(--icon-yellow);
+    color: var(--accent-color);
     transition: 0.2s linear;
     transition-property: background-color, color;
 }
 
 .header .cta {
     color: #fff;
-    background-color: rgba(255, 255, 255, 0.274);
+    background-color: #ffffff46;
     padding: 10px 20px;
-    margin: 50px 0;
     border-radius: 30px;
+    margin: 50px 0;
     transition: 0.2s linear;
     transition-property: background-color, color;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .header .cta:hover {
-    color: var(--accent-color);
+    color: #303d7e;
     background-color: #ced4e0;
     transition: 0.2s linear;
     transition-property: background-color, color;
 }
+li{
+    list-style: none;
+}
 
-/*=============== CONTENT ===============*/
+/* =========== Content ============= */
 
 .content {
-    border-radius: var(--border-radius);
-    background: var(--background-color-2);
+    border-radius: 30px;
+    background: #141415;
     width: 100%;
-    height: 100%;
+    height: 90%;
+    margin-left: 5px;
     overflow: auto;
+    border: 1px solid #1c1c17;
+    /* columns: black; */
     scroll-behavior: smooth;
-    border: 1px solid rgb(28, 28, 23);
-
+    color: white;
 }
 
 .content-card {
@@ -208,8 +205,24 @@ h2 {
     margin: 0 50px;
 }
 
-/*=============== HOME SECTION ===============*/
+/* ====== home section ====== */
+.content-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
 
+.content-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Additional styling for the section */
+.home {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
 .home h1 {
     font-size: 3.5rem;
     font-weight: bolder;
@@ -217,8 +230,7 @@ h2 {
     margin: 20px;
 }
 
-/*=============== ABOUT SECTION ===============*/
-
+/* ========= aboubt section =========== */
 .about {
     display: flex;
     flex-direction: column;
@@ -229,27 +241,86 @@ h2 {
     margin: 0.5rem 0;
 }
 
+/* ========== service ============ */
+
+.service {
+    margin-bottom: 35px;
+}
+
+.service-title {
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.service-item {
+    position: relative;
+    background: var(--border-gradient-onyx);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-2);
+    z-index: 1;
+}
+
+.service-item::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.service-icon-box {
+    margin-bottom: 10px;
+}
+
+.service-icon-box img {
+    margin: auto;
+}
+
+.service-content-box {
+    text-align: center;
+}
+
+.service-item-title {
+    margin-bottom: 7px;
+}
+
+.service-item-text {
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-3);
+    line-height: 1.6;
+}
+
+
 .language {
     margin-bottom: 15px;
 }
 
-.language p {
+.languag p {
     margin: 0;
 }
 
 .bar {
-    background: rgba(0, 0, 0, 0.1);
+    margin-top: 2px;
+    background: rgba(0, 0, 0, 0.455);
     display: block;
-    height: 8px;
+    height: 7px;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .bar span {
-    height: 8px;
+    height: 7px;
     float: left;
+    background: rgb(105, 137, 72);
     border-radius: 10px;
-    background: #646132;
 }
 
 .telugu {
@@ -265,17 +336,24 @@ h2 {
 }
 
 .skill {
-    background-color: var(--icon-yellow);
+    background-color: #7e7730;
     color: #fff;
     line-height: 35px;
     padding: 5px 10px;
     border-radius: 15px;
 }
 
-/*=============== PROJECTS SECTION ===============*/
+
+/* ============ projects section ============== */
+h1 .section-title {
+    border-bottom: 30px;
+    position: relative;
+    font-size: 4rem;
+}
 
 .project-list {
     margin: 20px 0;
+    box-sizing: border-box;
 }
 
 .project-tile {
@@ -283,7 +361,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    background: var(--light-grey);
+    background: #9ea9c2;
     color: transparent;
     width: 100%;
     height: 300px;
@@ -302,7 +380,7 @@ h2 {
 }
 
 .overlay {
-    background: #babd9198;
+    background: #6a7846bd;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -334,7 +412,15 @@ h2 {
     transition: 0.5s ease;
 }
 
+
 /*=============== EXPERIENCE SECTION ===============*/
+
+#resume-experience {
+    font-size: 25px;
+    position: absolute;
+    /* background-color: #384322; */
+    color: #556b27;
+}
 
 .timeline {
     position: relative;
@@ -346,7 +432,7 @@ h2 {
     width: 2px;
     top: 30px;
     height: calc(100% - 100px);
-    background-color: var(--icon-yellow);
+    background-color: #384322;
     z-index: 100;
 }
 
@@ -357,12 +443,13 @@ h2 {
 .timeline-date::before {
     content: "";
     position: absolute;
-    background-color: var(--icon-yellow);
+    background-color: #6b6b24;
     left: -25px;
     top: 20px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    z-index: 100;
 }
 
 .timeline-items {
@@ -373,8 +460,7 @@ h2 {
     margin: 50px 0;
 }
 
-/*=============== FORM ===============*/
-
+/* =========== form ============ */
 form {
     width: 100%;
     max-width: 600px;
@@ -383,6 +469,8 @@ form {
 .input-box {
     display: flex;
     align-items: center;
+    border-radius: 10px;
+
 }
 
 .input-box input,
@@ -395,15 +483,10 @@ textarea {
     background-color: #000000;
 }
 
-.input-box input::placeholder,
+.input-box textarea::placeholder,
 textarea::placeholder {
     color: #7a7777;
     font-size: 1rem;
-    padding-left: 0.3rem;
-}
-
-.input-box textarea::placeholder {
-    padding-top: 0.3rem;
 }
 
 .input-box input:focus,
@@ -420,14 +503,16 @@ textarea:focus {
 }
 
 textarea {
+    padding-top: 0.4rem;
+
     min-height: 4rem;
     border: none;
-    border-bottom: solid 2px #7e8938;
+    border-bottom: solid 2px #7e7b30;
 }
 
 .submit-btn {
-    color: var(--accent-color);
-    background-color: var(--light-yellow);
+    color: #9ca758;
+    background-color: #727d34;
     padding: 10px 20px;
     margin: 50px 0;
     border-radius: 30px;
@@ -439,13 +524,13 @@ textarea {
 
 .submit-btn:hover {
     color: #fff;
-    background-color: var(--icon-yellow);
+    background-color: rgb(68, 88, 136);
     transition: 0.2s linear;
     transition-property: background-color, color;
     cursor: pointer;
 }
 
-/*=============== MEDIA QUERY ===============*/
+/* ============ Media ================== */
 
 @media screen and (max-width: 1200px) {
     html {
@@ -460,11 +545,14 @@ textarea {
     .portfolio {
         flex-direction: column;
         height: 100%;
-        margin: 30px 0 100px;
+        margin: 320px 0 100px;
+
     }
 
     .content {
-        padding-bottom: 100px;
+        padding-bottom: 90px;
+        /* margin-left: 20px; */
+        /* margin: 20px; */
     }
 
     .header {
@@ -477,6 +565,7 @@ textarea {
     }
 
     .menu {
+        background-color: #020512;
         flex-direction: row;
         position: fixed;
         bottom: 15px;
@@ -541,4 +630,5 @@ textarea {
         width: 0;
         height: 0;
     }
+
 }
