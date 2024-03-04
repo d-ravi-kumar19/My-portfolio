@@ -89,7 +89,7 @@ h2 {
     align-items: center;
     justify-content: center;
     order: 2;
-    background: #141415;
+    background: #384242;
     width: 70px;
     margin-left: 20px;
     border-radius: 35px;
@@ -505,7 +505,7 @@ textarea {
     }
 
     ::-webkit-scrollbar-thumb {
-        background: #fff;
+        background: transparent;
         border-radius: 10px;
     }
 }
