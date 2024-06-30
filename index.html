@@ -1,294 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ravikumar :: Portfolio </title>
+  </head>
+  <body>
+    <nav>
+      <!-- <i class="fa-brands fa-github"></i> -->
+      <i class="fa-solid fa-user"></i>
+      <section class="nav-container">
+        <p>Portfolio</p>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RaviKumarPortfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+        <form>
+          <input type="text" placeholder="Search" />
+        </form>
+      </section>
+<!-- 
+      <div class="btns-container">
+        <a href="#">Contact me</a>
+      </div> -->
+    </nav>
 
-<body>
-    <!--=============== FONT AWESOME ===============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <header>
+      <ul>
+        <li>
+          <a href="#" class="nav-link active" data-section="about">
+            <i class="fa-solid fa-book-open"></i> About Me
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link" data-section="experience"> 
+            <i class="fa-solid fa-briefcase"></i> Experience 
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link" data-section="projects"> 
+            <i class="fa-solid fa-folder"></i> Projects 
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link" data-section="contact"> 
+            <i class="fa-solid fa-phone"></i>  Contact
+          </a>
+        </li>
+      </ul>
+    </header>
 
-    <nav id="navbar" class="navbar"><a href="#"></a></nav>
+    <section class="main-container">
+      <section class="about-user" > 
+        <div class="user-avatar" style="background: image center/cover"></div>
+        <p class="user-name">Ravi Kumar Dobbali</p>
 
-    <div class="container">
-        <!--=============== NAVIGATION MENU ===============-->
+        <div class="followers-info">
+          <a href="#">
+            <i class="fa-solid fa-person"></i>
+            <span class="followers">3</span> follower
+          </a>
 
-        <div class="menu">
-            <a href="#home" class="menu-icon fa-solid fa-house"></a>
-            <a href="#about" class="menu-icon fa-solid fa-user"></a>
-            <a href="#projects" class="menu-icon fa-solid fa-code"></a>
-            <a href="#experience" class="menu-icon fa-solid fa-briefcase"></a>
-            <a href="#contact" class="menu-icon fa-solid fa-envelope"></a>
+          <a href="#"> <span class="following">0 </span> following </a>
+
+          <div class="icon-container">
+            <i class="fa-regular fa-building"></i>
+            <a href="#" class="company">Osmania University</a>
+          </div>
+          <div class="icon-container">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <a href="#" class="location">Hyderabad</a>
+          </div>
+          <div class="icon-container">
+            <i class="fa-brands fa-linkedin-in" ></i>
+            <a
+              href="http://www.linkedin.com/in/ravikumar-dobbali-607a86240"
+              class="blog"
+              >Linkedin</a
+            >
+          </div>
+          <div class="icon-container">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/d-ravi-kumar19">Github</a>
+          </div>
         </div>
+      </section>
 
-        <!--=============== MAIN "WINDOW" ===============-->
-
-        <div class="portfolio">
-            <!--=============== HEADER SECTION ===============-->
-
-            <section class="header">
-                <img class="header-img" src="assets/img/proficepic.jpg" alt="" />
-                <h1>Ravi Kumar </h1>
-                <h2>AIML undergrad</h2>
-                <div class="socials">
-                    <a href="http://www.linkedin.com/in/ravikumar-dobbali-607a86240" target="_blank"
-                        class="fa-brands fa-linkedin-in" id="profile-link"></a>
-                    <a href="https://github.com/d-ravi-kumar19" target="_blank" class="fa-brands fa-github"></a>
-                    <a href="https://medium.com/@dravikumar4614" target="_blank" class="fa-brands fa-medium"></a>
-                </div>
-                <div class="contact-info">
-                    <ul class="contacts-list">
-                        <li class="contact-item">
-                            <i class="fa-solid fa-envelope"></i> &nbsp;&nbsp; <a href="mailto:dravikumar4614@gmail.com"
-                                class="contact-link">dravikumra4614@gmail.com</a>
-                        </li>
-                        <li class="contact-item phone">
-                            <i class="fa-solid fa-phone"></i> &nbsp;&nbsp;
-                            <a href="tel:+916301764614" class="contact-link">+91 6301764614</a>
-
-                        </li>
-                        <!-- <li class="contact-item address">
-                            <P></P>
-                            <i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; <p class="contact-title">Hyderabad, Telangana</p>
-                        </li> -->
-                    </ul>
-                </div>
-                <a href="assets/Ravi_Kumar_Dobbali_resume.pdf" class="cta">DownIoad CV</a>
-
-            </section>
-
-            <!--=============== CONTENT SECTION ===============-->
-
-            <div class="content">
-                <!--=============== HOME ===============-->
-
-                <section class="content-card home" id="welcome-section">
-                    <h1>Hello, </h1>
-                    <h1 id="name">I'm Ravi Kumar Dobbali</h1>
-                    <h2>Data scientist</h2>
-                    <h2>ML engineer</h2>
-                    <h2>Web developer</h2>
-                </section>
-
-                <!--=============== ABOUT ME ===============-->
-
-                <section class="content-card about" id="about">
-                    <h1>About me</h1>
-                    <div class="about-item about-me">
-                        <p>
-                            Hi, I'm Ravi Kumar, a passionate self-taught Programmer. </p>
-                        <p>
-                            Enthusiastic and adaptable professional aspiring to thrive as a versatile Data Scientist,
-                            Machine Learning
-                            Engineer, and AI Engineer. Skilled in Python, Scikit-Learn, TensorFlow, and Keras, I bring a
-                            solid
-                            foundation in statistical analysis, machine learning, and data-driven strategies. Eager to
-                            contribute to
-                            innovative projects and actively seeking opportunities to apply my diverse skill set in the
-                            dynamic fields
-                            of data science and AI.
-                        </p>
-                    </div>
-                    <div class="col-2">
-                        <div class="about-item skills">
-                            <h2>Skills</h2>
-                            <span class="skill">C</span>
-                            <span class="skill">Java</span>
-                            <span class="skill">Python</span>
-                            <span class="skill">HTML</span>
-                            <span class="skill">CSS</span>
-                            <span class="skill">PHP</span>
-                            <span class="skill">JSP</span>
-                            <span class="skill">Sevlets</span>
-                            <span class="skill">JavaScript</span>
-                            <span class="skill">ML</span>
-                            <span class="skill">DL</span>
-                            <span class="skill">EDA</span>
-                            <span class="skill">AI</span>
-                            <span class="skill">DBMS</span>
-                            <span class="skill">OS</span>
-                            <span class="skill">Git</span>
-                        </div>
-
-                        <div class="about-item languages">
-                            <h2>Languages</h2>
-                            <div class="language">
-                                <p>Telugu</p>
-                                <span class="bar"><span class="telugu"></span></span>
-                            </div>
-                            <div class="language">
-                                <p>English</p>
-                                <span class="bar"><span class="english"></span></span>
-                            </div>
-                            <div class="language">
-                                <p>Hindi</p>
-                                <span class="bar"><span class="hindi"></span></span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!--=============== PROJECTS ===============-->
-
-                <section class="content-card projects" id="projects">
-                    <h1>Projects</h1>
-                    <div class="col-2 project-list">
-                        <div class="project-tile">
-                            <a href="https://github.com/d-ravi-kumar19/Movie-Recommendation-system" target="_blank"><img
-                                    src=".assets//img/movie_recomm.jpeg" alt="Movie-Recommendation-system" /></a>
-
-                            <div class="overlay">
-                                <div class="project-description">
-                                    <h3>Movie Recommendation System</h3>
-                                    <p>
-                                        Created a movie recommendation system using collaborative filtering and
-                                        content-based techniques.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-tile">
-                            <a href="https://github.com/d-ravi-kumar19/Next-Word-Prediction" target="_blank"><img
-                                    src=".assets/img/next_word_pred.png" alt="Next-Word-Prediction" /></a>
-                            <div class="overlay">
-                                <div class="project-description">
-                                    <h3>Next Word Prediction</h3>
-                                    <p>
-                                        Engineered a Next Word Prediction system using NLP techniques and LSTM, GRU
-                                        models.
-                                        Demonstrated proficiency in NLP, sequence modeling, and advanced neural
-                                        networks.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Repeat the structure for the remaining projects -->
-                        <!-- Example for the third project -->
-                        <div class="project-tile">
-                            <a href="https://github.com/d-ravi-kumar19/Text-Summarizer" target="_blank"><img
-                                    src=".assets/img/text_summarizer.jpeg" alt="Text-Summarizer" /></a>
-                            <div class="overlay">
-                                <div class="project-description">
-                                    <h3>Text Summarization</h3>
-                                    <p>
-                                        Developed a Text Summarization system using NLP techniques and Python with NLTK
-                                        and PageRank.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Example for the fourth project -->
-                        <div class="project-tile">
-                            <a href="https://github.com/d-ravi-kumar19/Hyderabad-House-Rent-Prediction"
-                                target="_blank"><img src=".assets/img/house_rent.jpeg"
-                                    alt="house rent Prediction" /></a>
-                            <div class="overlay">
-                                <div class="project-description">
-                                    <h3>Hyderabad House Rent Prediction</h3>
-                                    <p>
-                                        Developed a web page for predicting house rents in Hyderabad with 97% accuracy
-                                        using machine learning.
-                                        Tools: Jupyter Notebook, Scikit-Learn, Streamlit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="https://github.com/d-ravi-kumar19">see more...</a>
-                </section>
-
-                <!--=============== EXPERIENCE ===============-->
-
-                <section class="content-card experience" id="experience">
-                    <h1>Experience</h1>
-                    <div class="timeline">
-                        <div class="timeline-items">
-                            <div class="timeline-item">
-                                <div class="timeline-date">October - November 2023</div>
-                                <div class="timeline-content">
-                                    <h3>Amazon ML Summer School 2023 Apprenticeship</h3>
-                                    <p>
-                                        Honored to be selected for the Amazon ML Summer School 2023! Interacted directly
-                                        with Amazon's scientists, delving into modules like Supervised Learning, Deep
-                                        Neural Networks, and more. Thrilled to receive goodies and enhance my skills at
-                                        the forefront of Amazon's machine learning initiatives.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-date">July - August 2023</div>
-                                <div class="timeline-content">
-                                    <h3>Data Analyst Intern | KPMG</h3>
-                                    <p>
-                                        Performed statistical analysis to identify performance patterns and devised
-                                        data-driven strategies.
-                                        Delivered a monitoring dashboard to track business performance.
-                                        Responsible for performing data-driven analytics for generating business
-                                        insights.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">June - July 2023</div>
-                                <div class="timeline-content">
-                                    <h3>Data Analyst Intern | Quantium</h3>
-                                    <p>
-                                        Collaborated with the team to analyze and interpret large datasets for business
-                                        insights.
-                                        Developed and implemented data-driven strategies to optimize business
-                                        performance.
-                                        Contributed to the design and implementation of data visualization dashboards.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- You can add more experience items following the same structure -->
-                        </div>
-                    </div>
-                </section>
-
-                <!--=============== CONTACT ===============-->
-
-                <section class="content-card contact" id="contact">
-                    <h1>Contact</h1>
-                    <form class="form" id="form" action="send_email.php" method="post">
-                        <div class="input-box">
-                            <input type="text" class="text-input" name="name" placeholder="Name" required
-                                autocomplete="off" />
-                        </div>
-                        <div class="input-box">
-                            <input type="email" class="text-input" name="email" id="email" placeholder="Email" required
-                                autocomplete="off" />
-                        </div>
-                        <div class="input-box">
-                            <input type="subject" class="text-input" name="subject" id="subject" placeholder="Subject"
-                                required autocomplete="off" />
-                        </div>
-                        <div class="input-box">
-                            <textarea name="text" class="message" placeholder="Message..."></textarea>
-                        </div>
-                        <div class="input-box">
-                            <input type="submit" class="submit-btn" id="submit" value="submit" />
-                        </div>
-                    </form>
-                </section>
+      <main>
+        <!-- ----- about section----------- -->
+        <section class="about section" id="about" data-section="about">
+          <div class="card">
+              <div class="profile-info name" id="welcome-section">
+                <p>Hello, </p>
+                <p id="name">I'm Ravi Kumar Dobbali</p>
+              </div>
+              <ul>
+                <li>Passionate self-taught Programmer</li>
+                <li>Enthusiastic Data Scientist, ML Engineer, and AI Engineer</li>
+                <li>Skilled in Python, Scikit-Learn, TensorFlow, and Keras</li>
+                <li>Strong foundation in statistical analysis and machine learning</li>
+                <li>Eager to contribute to innovative projects</li>
+              </ul>
+          </div>
+          <!--------- skills ------------ -->
+          <div class="card">
+            <div class="about-item skills">
+              <p>Skills</p>
+              <span class="item">C</span>
+              <span class="item">Java</span>
+              <span class="item">Python</span>
+              <span class="item">HTML</span>
+              <span class="item">CSS</span>
+              <span class="item">PHP</span>
+              <span class="item">JSP</span>
+              <span class="item">Servlets</span>
+              <span class="item">JavaScript</span>
+              <span class="item">ML</span>
+              <span class="item">DL</span>
+              <span class="item">EDA</span>
+              <span class="item">AI</span>
+              <span class="item">DBMS</span>
+              <span class="item">OS</span>
+              <span class="item">Git</span>
             </div>
+          </div>
+
+          <!-- Languages known -->
+          <div class="card">
+            <div class="profile-info languages">
+              <p>Languages</p>
+              <ul>
+                <span class="item">Telugu</span>
+                <span class="item">English</span>
+                <span class="item">Hindi</span>
+              </ul>
+            </div>
+          </div>
+        </section>
+   
+        <!-- ----- experience ----- -->
+        <section class="experience section" id="experience" data-section="experience">
+            <div class="card">
+              <h1>Experience</h1>
+              <div class="timeline">
+                  <div class="timeline-items">
+                    <div class="timeline-item">
+                        <div class="timeline-date">October - November 2023</div>
+                        <div class="timeline-content">
+                            <h3>Amazon ML Summer School 2023 Apprenticeship</h3>
+                            <p>
+                                Honored to be selected for the Amazon ML Summer School 2023! Interacted directly
+                                with Amazon's scientists, delving into modules like Supervised Learning, Deep
+                                Neural Networks, and more. Thrilled to receive goodies and enhance my skills at
+                                the forefront of Amazon's machine learning initiatives.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">July - August 2023</div>
+                        <div class="timeline-content">
+                            <h3>Data Analyst Intern | KPMG</h3>
+                            <p>
+                                Performed statistical analysis to identify performance patterns and devised
+                                data-driven strategies.
+                                Delivered a monitoring dashboard to track business performance.
+                                Responsible for performing data-driven analytics for generating business
+                                insights.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">June - July 2023</div>
+                        <div class="timeline-content">
+                            <h3>Data Analyst Intern | Quantium</h3>
+                            <p>
+                                Collaborated with the team to analyze and interpret large datasets for business
+                                insights.
+                                Developed and implemented data-driven strategies to optimize business
+                                performance.
+                                Contributed to the design and implementation of data visualization dashboards.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </section>
+
+      
+        <!-- ---------- Projects ---------------- -->
+        <section class="projects section" id="projects" data-section="projects">
+          <div class="card">
+            <h1>Projects</h1>
+            <div class="project-list">
+              <div class="project-tile">
+                <a href="https://github.com/d-ravi-kumar19/Movie-Recommendation-system" target="_blank">
+                  <img src="assets/img/movie_recomm.jpeg" alt="Movie-Recommendation-system" />
+                  <div class="overlay">
+                    <div class="project-description">
+                      <h3>Movie Recommendation System</h3> &nbsp;
+                      <p>Created a movie recommendation system using collaborative filtering and content-based techniques.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="project-tile">
+                <a href="https://github.com/d-ravi-kumar19/Next-Word-Prediction" target="_blank">
+                  <img src="assets/img/next_word_pred.png" alt="Next-Word-Prediction" />
+                  <div class="overlay">
+                    <div class="project-description">
+                      <h3>Next Word Prediction</h3> &nbsp;
+                      <p>Engineered a Next Word Prediction system using NLP techniques and LSTM, GRU models. Demonstrated proficiency in NLP, sequence modeling, and advanced neural networks.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="project-tile">
+                <a href="https://github.com/d-ravi-kumar19/Text-Summarizer" target="_blank">
+                  <img src="assets/img/text_summarizer.jpeg" alt="Text-Summarizer" />
+                  <div class="overlay">
+                    <div class="project-description">
+                      <h3>Text Summarization</h3> &nbsp;
+                      <p>Developed a Text Summarization system using NLP techniques and Python with NLTK and PageRank.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="project-tile">
+                <a href="https://github.com/d-ravi-kumar19/Hyderabad-House-Rent-Prediction" target="_blank">
+                  <img src="assets/img/house_rent.jpeg" alt="house rent Prediction" />
+                  <div class="overlay">
+                    <div class="project-description">
+                      <h3>Hyderabad House Rent Prediction</h3> &nbsp;
+                      <p>Developed a web page for predicting house rents in Hyderabad with 97% accuracy using machine learning. Tools: Jupyter Notebook, Scikit-Learn, Streamlit.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="see-more-container">
+              <a href="https://github.com/d-ravi-kumar19" class="see-more-link">see more...</a>
+            </div>
+            
+          </div>
+        </section>
+
+        <!-- ------ contact me ----------- -->
+        <section class="contact section" id="contact" data-section="contact">
+          <div class="card">
+
+         
+          <h1>Contact</h1>
+          <form class="form" id="form" action="sendEmail()" method="post">
+              <div class="input-box">
+                  <input type="text" class="text-input" name="name" placeholder="Name" required
+                      autocomplete="off" />
+              </div>
+              <div class="input-box">
+                  <input type="email" class="text-input" name="email" id="email" placeholder="Email" required
+                      autocomplete="off" />
+              </div>
+              <div class="input-box">
+                  <input type="subject" class="text-input" name="subject" id="subject" placeholder="Subject"
+                      required autocomplete="off" />
+              </div>
+              <div class="input-box">
+                  <textarea name="text" class="message" placeholder="Message..."></textarea>
+              </div>
+              <div class="input-box">
+                  <input type="submit" class="submit-btn" id="submit" value="submit" />
+              </div>
+          </form>
         </div>
-    </div>
-    <!-- ============JavaScript section ==================== -->
-    <script>
-        // Add the 'show' class to trigger the animation after the page loads
-        document.addEventListener('DOMContentLoaded', function () {
-            var welcomeSection = document.getElementById('welcome-section');
-            welcomeSection.classList.add('show');
-        });
-    </script>
+      </section>
+        
 
-</body>
+      </main>
+    </section>
 
+    <script src="index.js"></script>
+  </body>
 </html>
